@@ -21,8 +21,8 @@ const ARViewer = () => {
         return;
       }
 
-      await R2U.init({ customerId: '5e8e7580404328000882f4ae' });
-      const sku = 'RE000001';
+      await R2U.init({ customerId: '9755e2a9-379b-45d7-af75-30a5e7c5dabc' });
+      const sku = 'HLC0040';
       const isActive = await R2U.sku.isActive(sku);
 
       if (isActive) {
@@ -45,8 +45,8 @@ const ARViewer = () => {
 
   return (
     <div>
-      <button ref={arButtonRef}>Ver em AR</button>
-      <div ref={viewerRef} style={{ width: '100%', height: '500px' }}></div>
+      <button ref={arButtonRef}>Ver AR</button>
+      <div ref={viewerRef} style={{ width: '50%', height: '500px' }}></div>
     </div>
   );
 };
