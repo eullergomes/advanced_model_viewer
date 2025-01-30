@@ -1,3 +1,4 @@
+import Navbar from "@/components/navbar/Navbar";
 import { Box, Container, Heading, Text } from "@chakra-ui/react";
 
 const App = () => {
@@ -14,7 +15,9 @@ const App = () => {
   }
 
   return (
-    <Container as="section" className="mx-auto my-10" textAlign={"center"}>
+    <>
+      <Navbar />
+      <Container as="section" className="mx-auto my-10" textAlign={"center"}>
       <Heading className="text-4xl" fontWeight="bold">Chakra UI Components</Heading>
 
       <Text>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</Text>
@@ -28,6 +31,7 @@ const App = () => {
         Hello Euller
       </Box>
     </Container>
+    </>
   )
 }
  
