@@ -3,7 +3,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '@r2u/javascript-ar-sdk';
 import { Button } from '@chakra-ui/react';
-import { Cuboid, QrCode } from 'lucide-react';
+import { Box, QrCode } from 'lucide-react';
 
 declare global {
   interface Window {
@@ -56,7 +56,7 @@ const ARViewer = () => {
   return (
     <div className='flex flex-col items-center justify-center'>
       <Button ref={arButtonRef} className='text-black bg-stone-500 px-2'>
-        <Cuboid />
+        <Box />
         Veja na sua casa
       </Button>
       <div ref={viewerRef} className='border-2 border-stone-500 p-4 rounded-md' style={{ width: '50%', height: '500px' }}></div>
